@@ -15,7 +15,7 @@ public class Factura {
     @Autowired
     private Cliente cliente;
     @Autowired
-    private List<ItemFactura> item;
+    private List<ItemFactura> items;
 
     public String getDescripcion() {
         return descripcion;
@@ -33,11 +33,11 @@ public class Factura {
         this.cliente = cliente;
     }
 
-    public List<ItemFactura> getItem() {
-        return item;
+    public List<ItemFactura> getItems() {
+        return items;
     }
 
-    public void setItem(List<ItemFactura> item) {
-        this.item = item;
+    public void setItems(List<ItemFactura> items) {
+        this.items = items;
     }
 }
